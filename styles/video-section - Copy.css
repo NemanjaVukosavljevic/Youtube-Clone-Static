@@ -1,0 +1,79 @@
+.thumbnail-photo {
+    display: block;
+    width: 100%;
+}
+
+.video-title {
+    width: 250px;
+    font-weight: 500;
+    font-size: 100%;
+    /* 15 */
+}
+
+.video-author {
+    width: 250px;
+    font-size: 100%;
+    color: rgb(96, 96, 96);
+    /* 10 */
+}
+
+.view-count {
+    width: 250px;
+    font-size: 100%;
+    color: rgb(96, 96, 96);
+    /* 13 */
+}
+
+.profile-photo {
+    width: 100%;
+    margin-top: 2px;
+    border-radius: 50px;
+}
+
+
+/* OVDE POCINJU DIVOVI ZA OVU SEKCIJU */
+
+.content-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+    .video-section-div {
+        display: inline-block;
+    }
+
+        .under-thumbnail-div {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+            .profile-pic-div {
+                /* display: inline-block; */
+                vertical-align: top;
+                width: 28px;
+                padding-left: 5px;
+                padding-right: 15px;
+            }
+
+            .details-div {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                min-width: 90px;
+            }
+
+                .video-title-div {
+                    padding-bottom: 10px;
+                    font-size: 100%;
+                }
+
+                    .video-title, .video-author, .view-count {
+                        width: 100%;
+                    }
+
+                .view-count-div {
+                    line-height: 30px;
+                }

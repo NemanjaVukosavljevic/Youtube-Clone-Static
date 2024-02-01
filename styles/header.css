@@ -1,0 +1,248 @@
+.header-div {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: white;
+    border-bottom: 0.1px solid rgb(184, 182, 182);
+}
+
+/* ISPOD SU PODESAVANJA ZA TOOLTIP */
+
+
+    .tooltip {
+
+        font-size: 10px;
+        padding: 2px 4px;
+        background-color: rgba(96, 96, 96, 0.9);
+        color: beige;
+    }
+
+/* OVDE SE ZAVRSAVA TOOLTIP DEO */
+
+    .left-div {
+        width: 200px;
+        min-width: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .hamburger-menu-div{
+            position: relative;
+            width: 80px;
+            padding: 0px 0px 0px 20px;
+            transition: opacity 0.15s;
+        }
+        .hamburger-menu-div .tooltip-div {
+            position: absolute;
+            bottom: -20px;
+            right: 12px;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 100;
+        }
+        .hamburger-menu-div:hover .tooltip-div{
+            opacity: 1;
+        }
+            .hamburger-menu {
+                width: 40%;
+                cursor: pointer;
+                
+            }
+        .youtube-logo-div{
+                min-width: none;
+                margin-left: 6px;
+            }
+            .youtube-logo {
+                width: 60%;
+            }
+
+    .middle-div {
+        flex: 1;
+        max-width: 300px;
+        min-width: 200px;
+        margin-left: 100px;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .search-field-div {
+            align-items: center;
+
+        }
+            .search-field {
+                width: 300px;
+                padding: 5px 0px 5px 5px;
+                font-size: 11px;
+                outline: none;
+                border: solid 0.1px rgb(204, 204, 204);
+                font-weight: 400;
+                color: black;
+            }
+        .search-button-div {
+            position: relative;
+            transition: opacity 0.15s;
+
+            height: 24px;
+        }
+
+        .search-button-div .tooltip-div {
+            position: absolute;
+            left: -2px;
+            bottom: -20px;
+            opacity: 0;
+            pointer-events: none;    /* POINTER EVENTS SE KORISTI DA SE TOOLTIP NE BI VIDEO KADA SE HOVERUJE DEO ISPOD DIVA! */          
+        }
+
+            .search-button-div:hover .tooltip-div{
+                opacity: 1;
+            }
+                .search-button {
+                    width: 35px;
+                    height: 100%;
+                    margin-left: 0px;
+                    outline: none;
+                    border: solid 0.1px rgb(204, 204, 204);
+                    font-weight: 400;
+                    color: rgb(204, 204, 204);
+                    cursor: pointer;
+                }
+
+                    .search {
+                        width: 100%;
+                    }
+                
+                
+        .voice-search-div {
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .voice-search-div .tooltip-div {
+            position: absolute;
+            bottom: -12px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .voice-search-div:hover .tooltip-div{
+            opacity: 1;
+        }
+                .voice-search-button {
+                    margin-left: 4px;
+                    width: 28px;
+                    height: 23px;
+                    border: none;
+                    border-radius: 25px;
+                    background-color: #f8f8f8;
+                    cursor: pointer;
+                }
+
+                    .voice-search {
+                        width: 100%;
+                    }
+
+
+
+    .right-div {
+        /* width: 210px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 25px;
+        flex-shrink: 0; */
+        display: flex;
+        align-items: center;
+        
+        width: 210px;
+        justify-content: space-between;
+
+    }
+
+        .upload-div, .apps-div, .notification-div, .profile-pic-div-2 {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .upload-div .tooltip-div {
+            position: absolute;
+            bottom: -12px;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .upload-div:hover .tooltip-div {
+            opacity: 1;
+        }
+
+        .apps-div .tooltip-div {
+            position: absolute;
+            bottom: -12px;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .apps-div:hover .tooltip-div {
+            opacity: 1;
+        }
+
+        .notification-div {
+            position: relative;
+        }
+
+        .notification-div .tooltip-div {
+            position: absolute;
+            bottom: -21px;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .notification-div:hover .tooltip-div {
+            opacity: 1;
+        }
+
+        .notification-number-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 9px;
+            right: 12px;
+            
+        }
+
+        .notification-number {
+            font-size: 10px;
+
+            background-color: red;
+            color: white;
+            padding: 1px 5px 1px 4px;
+            border-radius: 50%;
+        }
+
+        .upload, .apps, .notification, .profile-pic {
+            width: 35%;
+        }
+
+        .profile-pic-div-2 {
+            width: 70%;
+        }
+
+
+
